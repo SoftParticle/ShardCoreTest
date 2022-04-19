@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Shards";
+}
+
+<div class="row">
+    <div class="col-md-5 mt-3 mb-3">
+        <div class="pl-3">
+            <button type="button" class="btn btn-primary" id="seed-button">Seed Products</button>
+        </div>
+
+
+        <!-- Pie Chart -->
+        <div class="col-md-9 mt-3">
+            <div class="card shadow mb-4 h-100">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Shards Products Count</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-pie pt-4 pb-2">
+                        <canvas id="shardsPieChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <b><label>Total Products: </label></b> <span id="total-products-container"></span>
+
+            <div id="seed-times-container" hidden>
+                <div><b><label>Start Seed Time: </label></b> <span id="start-seed-time-container"></span></div>
+                <div><b><label>Stop Seed Time: </label></b> <span id="stop-seed-time-container"></span></div>
+            </div>
+        </div>        
+    </div>
+    <div id="blocks-duration-container" class="col-md-5" hidden>
+        <h6 class="display-4">Blocks duration</h6>
+        <ul  class="list-group" id="seed-blocks-duration-list">
+        </ul>
+    </div>
+</div>
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            initShardsChart();
+            initSignalRPieChart();
+        });
+    </script>
+}
