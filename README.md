@@ -1,0 +1,2 @@
+# ShardCoreTest
+ShardCore Example Project
