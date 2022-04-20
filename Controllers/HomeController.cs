@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
-using Particle.Framework.CommonExtensions;
+using ShardCoreTest.Extensions;
 using ShardCoreTest.Models;
 using ShardCoreTest.Services;
 using ShardCoreTest.SignalRHubs;
