@@ -15,7 +15,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
-    <PackageReference Include="Particle.ShardCore" Version="1.0.1.4" />
+    <PackageReference Include="Particle.ShardCore" Version="1.0.1.6" />
   </ItemGroup>
 
   <ItemGroup>

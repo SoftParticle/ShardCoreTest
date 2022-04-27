@@ -74,7 +74,7 @@ namespace ShardCoreTest.Controllers
 
                 return true;
             }
-            catch
+            catch(Exception e)
             {
                 return false;
             }
