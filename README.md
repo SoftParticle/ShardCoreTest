@@ -3,7 +3,9 @@ This is an example project to showcase ShardCore horizontal sharding capabilitie
 
 ### Setup
 To setup the project just replace the server name on the SQL connection strings, and the DatabaseServerName variables, on the Startup class.
+
 Create a database to store the shards information and another database for each one of the shards you'll be using.
+
 Make sure you have full-text  search enabled on your SQL Server instance, you can get more information [here](https://www.mssqltips.com/sqlservertip/6841/add-full-text-search-sql-server/).
 
 ### Running the Project
